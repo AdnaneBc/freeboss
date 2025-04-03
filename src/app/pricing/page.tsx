@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     question: 'Can I cancel my subscription anytime?',
-    answer: 'Yes, you can cancel your subscription at any time. You\'ll continue to have access to your plan until the end of your current billing period.',
+    answer: 'Yes, you can cancel your subscription at any time. You&apos;ll continue to have access to your plan until the end of your current billing period.',
   },
   {
     question: 'Do you offer annual billing discounts?',

@@ -35,7 +35,7 @@ export default function PricingPreview() {
             Simple, transparent pricing
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            Start free. Upgrade when you're ready to boss up.
+            Start free. Upgrade when you&apos;re ready to boss up.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-8 sm:gap-y-10 lg:mt-20 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
