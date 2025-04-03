@@ -13,6 +13,10 @@ export default function EmailCapture() {
     setStatus('loading');
 
     try {
+      if (!supabase) {
+        throw new Error('Supabase is not configured');
+      }
+
       const { error } = await supabase
         .from('waitlist')
         .insert([
