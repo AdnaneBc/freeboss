@@ -13,6 +13,7 @@ export default function ForWhom() {
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-3">
           <div className="flex flex-col items-start">
             <div className="rounded-2xl bg-white dark:bg-gray-900 p-8 ring-1 ring-gray-200 dark:ring-gray-700">
+              <div className="text-4xl mb-4">👨‍💻</div>
               <h3 className="text-lg font-semibold leading-8 text-gray-900 dark:text-white">Developers</h3>
               <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                 Track time per project, manage sprints, and generate invoices automatically.
@@ -21,6 +22,7 @@ export default function ForWhom() {
           </div>
           <div className="flex flex-col items-start">
             <div className="rounded-2xl bg-white dark:bg-gray-900 p-8 ring-1 ring-gray-200 dark:ring-gray-700">
+              <div className="text-4xl mb-4">🎨</div>
               <h3 className="text-lg font-semibold leading-8 text-gray-900 dark:text-white">Designers</h3>
               <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                 Organize design projects, track revisions, and manage client feedback in one place.
@@ -29,6 +31,7 @@ export default function ForWhom() {
           </div>
           <div className="flex flex-col items-start">
             <div className="rounded-2xl bg-white dark:bg-gray-900 p-8 ring-1 ring-gray-200 dark:ring-gray-700">
+              <div className="text-4xl mb-4">✍️</div>
               <h3 className="text-lg font-semibold leading-8 text-gray-900 dark:text-white">Creators</h3>
               <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                 Streamline your content creation workflow and manage client relationships efficiently.

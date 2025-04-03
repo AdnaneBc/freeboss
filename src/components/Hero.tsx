@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-gray-900">
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+      <div className="mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-          <div className="mt-24 sm:mt-32 lg:mt-16">
+          <div className="mt-16 sm:mt-32 lg:mt-16">
             <a href="#" className="inline-flex space-x-6">
               <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-500/20">
                 Coming Soon
@@ -19,16 +19,16 @@ export default function Hero() {
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
             Tasks. Time. Invoices. AI Proposals. One simple dashboard.
           </p>
-          <div className="mt-10 flex items-center gap-x-6">
+          <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-x-6">
             <Link
               href="#waitlist"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="w-full sm:w-auto rounded-md bg-indigo-600 px-3.5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Join the Waitlist
             </Link>
             <Link
               href="https://github.com/yourusername/freeboss"
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+              className="w-full sm:w-auto text-center sm:text-left text-sm font-semibold leading-6 text-gray-900 dark:text-white"
             >
               Follow the Build <span aria-hidden="true">→</span>
             </Link>
