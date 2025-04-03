@@ -28,7 +28,7 @@ export default function EmailCapture() {
 
       setStatus('success');
       setEmail('');
-      toast.success('Thanks for joining! We\'ll be in touch soon.', {
+      toast.success("Thanks for joining! We&apos;ll be in touch soon.", {
         duration: 4000,
         position: 'top-center',
         style: {
@@ -59,7 +59,7 @@ export default function EmailCapture() {
             Be the first to try FreeBoss
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-indigo-100">
-            Join our waitlist to get early access and exclusive features. We'll notify you when we launch.
+            Join our waitlist to get early access and exclusive features. We&apos;ll notify you when we launch.
           </p>
           <form onSubmit={handleSubmit} className="mt-10 flex max-w-md gap-x-4 mx-auto">
             <label htmlFor="email-address" className="sr-only">
