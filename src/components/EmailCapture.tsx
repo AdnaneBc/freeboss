@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { supabase } from '@/lib/supabase';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function EmailCapture() {
   const [email, setEmail] = useState('');
@@ -11,17 +13,46 @@ export default function EmailCapture() {
     setStatus('loading');
 
     try {
-      // TODO: Replace with actual Supabase integration
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulated API call
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([
+          {
+            email,
+            created_at: new Date().toISOString(),
+          },
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
       setStatus('success');
       setEmail('');
+      toast.success('Thanks for joining! We\'ll be in touch soon.', {
+        duration: 4000,
+        position: 'top-center',
+        style: {
+          background: '#4F46E5',
+          color: '#fff',
+        },
+      });
     } catch (error) {
+      console.error('Error submitting email:', error);
       setStatus('error');
+      toast.error('Something went wrong. Please try again.', {
+        duration: 4000,
+        position: 'top-center',
+        style: {
+          background: '#EF4444',
+          color: '#fff',
+        },
+      });
     }
   };
 
   return (
     <div id="waitlist" className="bg-indigo-600">
+      <Toaster />
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -53,16 +84,6 @@ export default function EmailCapture() {
               {status === 'loading' ? 'Submitting...' : 'Join Waitlist'}
             </button>
           </form>
-          {status === 'success' && (
-            <p className="mt-4 text-sm text-indigo-100">
-              Thanks for joining! We'll be in touch soon.
-            </p>
-          )}
-          {status === 'error' && (
-            <p className="mt-4 text-sm text-red-200">
-              Something went wrong. Please try again.
-            </p>
-          )}
         </div>
       </div>
     </div>
