@@ -104,7 +104,7 @@ export default function PricingPage() {
             Simple pricing for freelancers.
           </h1>
           <p className="mt-6 text-lg sm:text-xl leading-8 text-gray-600 max-w-2xl mx-auto">
-            Start free. Upgrade when you're ready to boss up.
+            Start free. Upgrade when You&apos;re ready to boss up.
           </p>
         </div>
 
