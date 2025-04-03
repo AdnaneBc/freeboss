@@ -32,7 +32,7 @@ export default function EmailCapture() {
 
       setStatus('success');
       setEmail('');
-      toast.success("Thanks for joining! We&apos;ll be in touch soon.", {
+      toast.success("Thanks for joining! We'll be in touch soon.", {
         duration: 4000,
         position: 'top-center',
         style: {
